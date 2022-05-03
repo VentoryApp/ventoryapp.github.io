@@ -908,7 +908,9 @@ subscribeForm.addEventListener('submit', (e) => {
       {
         fields: getFormData(SUBSCRIBE_FORM),
         context: {
-          hutk: getHubspotUtkCookie()
+          hutk: getHubspotUtkCookie(),
+          pageName: document.title,
+          pageUri: window.location
         }
       }), 
    })
