@@ -534,8 +534,14 @@ subscribeForm.addEventListener('submit', (e) => {
   fetch('https://api.hsforms.com/submissions/v3/integration/submit/25716919/94ced2d1-c941-4c79-b00f-ae7869d1d1e7', {
     method: 'POST', 
     headers: {'Content-Type': 'application/json'}, 
-    body: JSON.stringify(getFormData(SUBSCRIBE_FORM)), 
-    hutk: getHubspotUtkCookie()})
+    body: JSON.stringify(
+      {
+        fields: getFormData(SUBSCRIBE_FORM),
+        context: {
+          hutk: getHubspotUtkCookie()
+        }
+      }), 
+   })
   .then(resp => {
     console.log('form submit', resp);
     if (resp.status != 200) {
