@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Field Inventory on Ventory | The Best Solution for Inventory Management</title>
+    <link>https://www.ventory.io/tags/field-inventory/</link>
+    <description>Recent content in Field Inventory on Ventory | The Best Solution for Inventory Management</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>© Ventory</copyright>
+    <lastBuildDate>Tue, 21 Dec 2021 09:51:57 +0600</lastBuildDate><atom:link href="https://www.ventory.io/tags/field-inventory/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Controlling Inventory Outside of Warehouse</title>
+      <link>https://www.ventory.io/blog/2021-12-22-field-inventory-management/</link>
+      <pubDate>Tue, 21 Dec 2021 09:51:57 +0600</pubDate>
+      
+      <guid>https://www.ventory.io/blog/2021-12-22-field-inventory-management/</guid>
+      <description>Businesses that need to track, ship, and purchase inventory need a way to keep accurate records and schedule stock movements.</description>
+    </item>
+    
+    <item>
+      <title>5 Ways to check if your inventory management is customer-centric</title>
+      <link>https://www.ventory.io/blog/2021-11-22-is-your-inventory-management-customer-centric/</link>
+      <pubDate>Mon, 22 Nov 2021 09:51:57 +0600</pubDate>
+      
+      <guid>https://www.ventory.io/blog/2021-11-22-is-your-inventory-management-customer-centric/</guid>
+      <description>Technology advancement among other factors has led to increased customer expectations, driving a need for agile supply chain planning.</description>
+    </item>
+    
+  </channel>
+</rss>
