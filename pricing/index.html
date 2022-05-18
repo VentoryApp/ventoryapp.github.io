@@ -227,7 +227,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   }
 </script>
 <!-- pricing -->
-<section class="section section-lg-bottom">
+<section class="section">
   <div class="container">
     <div class="row">
       
@@ -304,6 +304,32 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 </section>
 <!-- pricing -->
 
+<style>
+@media screen and (max-width: 992px) {
+  #business-case-calculator {
+    display: none;
+  }
+}
+@media screen and (min-width: 992px) {
+  #business-case-calculator {
+    display: block;
+  }
+
+  #business-case-calculator iframe {
+    min-height: 760px;
+  }
+}
+</style>
+
+<!-- business-case -->
+<section id="business-case-calculator" class="section-lg-bottom">
+  <div class="container">
+    <div class="row">
+      <h2>The business case</h2>
+      <iframe id="business-case-calculator-iframe" src="/business-case-builder/index.html" width="100%" frameBorder="0" marginwidth="0" height="300" marginheight="0" scrolling="No" hspace="0" vspace="0"></iframe>
+    </div>
+  </div>
+</section>
 
 	<!-- subscription -->
 
