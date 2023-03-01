@@ -1,1 +1,4 @@
 User-agent: *
+disallow: 
+
+Sitemap: https://ventory.io/sitemap.xml
