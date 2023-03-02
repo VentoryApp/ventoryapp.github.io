@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/business-case-builder/static/css/main.ed63329b.css",
+    "main.js": "/business-case-builder/static/js/main.123f5665.js",
+    "static/js/787.8b7856c9.chunk.js": "/business-case-builder/static/js/787.8b7856c9.chunk.js",
+    "static/media/logo.svg": "/business-case-builder/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
+    "index.html": "/business-case-builder/index.html",
+    "main.ed63329b.css.map": "/business-case-builder/static/css/main.ed63329b.css.map",
+    "main.123f5665.js.map": "/business-case-builder/static/js/main.123f5665.js.map",
+    "787.8b7856c9.chunk.js.map": "/business-case-builder/static/js/787.8b7856c9.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.ed63329b.css",
+    "static/js/main.123f5665.js"
+  ]
+}
