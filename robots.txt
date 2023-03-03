@@ -1,4 +1,4 @@
 User-agent: *
-disallow: 
+disallow: */404.html
 
 Sitemap: https://ventory.io/sitemap.xml
