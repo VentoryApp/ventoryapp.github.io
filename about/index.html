@@ -264,9 +264,9 @@
   <div class="container">
     <div class="row">
       <div class="col-lg-7">
-        <h2 class="text-white position-relative">
+        <h1 class="text-white position-relative">
           About Us<span class="watermark-sm">Mission</span>
-        </h2>
+        </h1>
         <p class="text-white pt-4 pb-4">
           Why is Ventory the Best SaaS for Inventory Management, no matter what industry?
         </p>
@@ -555,7 +555,6 @@ subscribeForm.addEventListener('submit', (e) => {
       }), 
    })
   .then(resp => {
-    console.log('form submit', resp);
     if (resp.status != 200) {
       showFormMessage(SUBSCRIBE_FORM, 'Something went wrong, try again later!', color = 'red');
     } else {

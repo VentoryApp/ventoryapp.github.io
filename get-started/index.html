@@ -262,9 +262,9 @@
   <div class="container">
     <div class="row">
       <div class="col-lg-7">
-        <h2 class="text-white position-relative">
+        <h1 class="text-white position-relative">
           Get Started Today!<span class="watermark-sm">Get Started</span>
-        </h2>
+        </h1>
         <p class="text-white pt-4 pb-4">
           No matter what industry you&rsquo;re in, Ventory helps you to organize your inventory, assets, and more. Find your industry and learn how we can help you manage your items.
         </p>
@@ -515,7 +515,6 @@ subscribeForm.addEventListener('submit', (e) => {
       }), 
    })
   .then(resp => {
-    console.log('form submit', resp);
     if (resp.status != 200) {
       showFormMessage(SUBSCRIBE_FORM, 'Something went wrong, try again later!', color = 'red');
     } else {

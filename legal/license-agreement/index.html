@@ -264,9 +264,9 @@
   <div class="container">
     <div class="row">
       <div class="col-lg-7">
-        <h2 class="text-white position-relative">
+        <h1 class="text-white position-relative">
           License agreement<span class="watermark-sm"></span>
-        </h2>
+        </h1>
         <p class="text-white pt-4 pb-4">
           Discover the rules governing the use of our website&rsquo;s content with our comprehensive content license agreement. Our agreement covers acceptance, general guidelines, and indemnification. Learn more now.
         </p>
@@ -633,7 +633,6 @@ subscribeForm.addEventListener('submit', (e) => {
       }), 
    })
   .then(resp => {
-    console.log('form submit', resp);
     if (resp.status != 200) {
       showFormMessage(SUBSCRIBE_FORM, 'Something went wrong, try again later!', color = 'red');
     } else {

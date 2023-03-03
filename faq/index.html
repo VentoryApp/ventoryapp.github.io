@@ -264,9 +264,9 @@
   <div class="container">
     <div class="row">
       <div class="col-lg-7">
-        <h2 class="text-white position-relative">
+        <h1 class="text-white position-relative">
           FAQ<span class="watermark-sm"></span>
-        </h2>
+        </h1>
         <p class="text-white pt-4 pb-4">
           What our users and players frequently ask.
         </p>
@@ -513,7 +513,6 @@ subscribeForm.addEventListener('submit', (e) => {
       }), 
    })
   .then(resp => {
-    console.log('form submit', resp);
     if (resp.status != 200) {
       showFormMessage(SUBSCRIBE_FORM, 'Something went wrong, try again later!', color = 'red');
     } else {

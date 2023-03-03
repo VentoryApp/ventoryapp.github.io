@@ -262,9 +262,9 @@
   <div class="container">
     <div class="row">
       <div class="col-lg-7">
-        <h2 class="text-white position-relative">
+        <h1 class="text-white position-relative">
           Solution<span class="watermark-sm">Solution</span>
-        </h2>
+        </h1>
         <p class="text-white pt-4 pb-4">
           Discover the ultimate inventory control solution with Ventory. Learn how Ventory can help you improve efficiency, reduce costs, and grow your business today!
         </p>
@@ -721,7 +721,6 @@ subscribeForm.addEventListener('submit', (e) => {
       }), 
    })
   .then(resp => {
-    console.log('form submit', resp);
     if (resp.status != 200) {
       showFormMessage(SUBSCRIBE_FORM, 'Something went wrong, try again later!', color = 'red');
     } else {
