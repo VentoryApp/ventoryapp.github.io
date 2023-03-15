@@ -21,7 +21,7 @@
 		})(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
 	</script>
 	<meta charset="utf-8">
-<title>Contact</title>
+<title>How it works</title>
 
 
 
@@ -33,7 +33,7 @@
 
 
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5">
-<meta name="description" content="Get in touch with us.">
+<meta name="description" content="A quickstart to Ventory">
 <meta name="author" content="Ventory">
 <meta name="generator" content="Hugo 0.91.2" />
 
@@ -45,19 +45,19 @@
 
 
 <!-- Open Graph image and Twitter Card metadata -->
-<meta name="twitter:title" content="Contact"/>
-<meta name="twitter:description" content="Get in touch with us."/>
-<meta property="og:title" content="Contact" />
-<meta property="og:description" content="Get in touch with us." />
+<meta name="twitter:title" content="How it works"/>
+<meta name="twitter:description" content="A quickstart to Ventory"/>
+<meta property="og:title" content="How it works" />
+<meta property="og:description" content="A quickstart to Ventory" />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://www.ventory.io/contact/" /><meta property="article:section" content="" />
-<meta property="article:published_time" content="2019-04-10T09:51:57+06:00" />
-<meta property="article:modified_time" content="2019-04-10T09:51:57+06:00" />
+<meta property="og:url" content="https://www.ventory.io/how-it-works/" /><meta property="article:section" content="" />
+
+
 
 
 <meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="Contact"/>
-<meta name="twitter:description" content="Get in touch with us."/>
+<meta name="twitter:title" content="How it works"/>
+<meta name="twitter:description" content="A quickstart to Ventory"/>
 
 
 
@@ -269,10 +269,10 @@
     <div class="row">
       <div class="col-lg-7">
         <h1 class="text-white position-relative">
-          Contact<span class="watermark-sm">Contact</span>
+          How it works<span class="watermark-sm">How it works</span>
         </h1>
         <p class="text-white pt-4 pb-4">
-          Get in touch with us.
+          A quickstart to Ventory
         </p>
       </div>
       
@@ -283,123 +283,23 @@
 
 		
 
+
+
+
+
 <section class="section">
   <div class="container">
-    <div class="row justify-content-between">
-      
-      <div class="col-lg-4">
-        <div class="p-5 rounded-xs shadow">
-          <h3 class="text-dark border-bottom mb-5 pb-4">Keep In Touch</h3>
-          <ul class="list-unstyled">
-            
-            
-            
-            <li class="d-flex mb-4">
-              <i class="fas fa-envelope icon-primary"></i>
-              <div class="pl-3">
-                <h6 class="text-dark">Email</h6>
-                <p><a href="mailto:hello@ventory.io">hello@ventory.io</a></p>
-              </div>
-            </li>
-            
-            
-            
-            <li class="d-flex mb-4">
-              <i class="fas fa-map icon-primary"></i>
-              <div class="pl-3">
-                <h6 class="text-dark">Address</h6>
-                <p>Ventory BV Brixtonlaan 9, 1930 Zaventem <br/> BE 683.940.268</p>
-              </div>
-            </li>
-            
-          </ul>
+    <div class="row">
+      <div class="col-12">
+        <div class="content">
+          
         </div>
       </div>
     </div>
   </div>
 </section>
 
-<section class="section section-lg-bottom bg-light">
-  <div class="container">
-    <div class="row">
-      <div class="col-lg-12 text-center">
-        <p class="subtitle">Message</p>
-        <h2 class="section-title">Leave A Message</h2>
-      </div>
-      <div class="col-lg-12 text-center p-0">
-        <form id="contact-form" action="#" method="post" class="row">
-          <div class="col-lg-6 form-field">
-            <input type="text" name="firstname" class="form-control" placeholder="First Name">
-            <div class="form-field__error">First name required</div>
-          </div>
-          <div class="col-lg-6 form-field">
-            <input type="text" name="lastname" class="form-control" placeholder="Last Name">
-            <div class="form-field__error">Last name required</div>
-          </div>
-          <div class="col-lg-6 form-field">
-            <input type="text" name="email" class="form-control" placeholder="Your email">
-            <div class="form-field__error">Invalid email</div>
-          </div>
-          <div class="col-lg-6 form-field">
-            <input type="text" name="company" class="form-control" placeholder="Company">
-            <div class="form-field__error">Company required</div>
-          </div>
-          <div class="col-lg-12 form-field">
-            <textarea name="message" name="message" class="form-control" placeholder="Message"></textarea>
-            <div class="form-field__error">Message required</div>
-          </div>
-          <div class="col-12">
-            <button id="contact-form__submit-btn" type="submit" class="btn btn-primary">Submit Now</button>
-          </div>
-          <div class="col-12 form-info"></div>
-        </form>
-      </div>
-    </div>
-  </div>
-</section>
 
-
-
-<script>
-  
-  
-  const CONTACT_FORM = 'contact-form'
-  const CONTACT_FORM_FIELDS = ['firstname', 'lastname', 'email', 'company', 'message'];
-
-  const contactForm = document.getElementById('contact-form');
-  contactForm.addEventListener('submit', (e) => {
-    e.preventDefault();
-
-    let valid = true;
-    valid = requiredValidator(CONTACT_FORM, CONTACT_FORM_FIELDS)
-    valid = emailValidator(CONTACT_FORM, ['email']);
-
-    if (!valid) return;
-
-    fetch('https://api.hsforms.com/submissions/v3/integration/submit/25716919/c0669617-084b-4fa4-a20d-bab8185a660b', {
-      method: 'POST', 
-      headers: {'Content-Type': 'application/json'}, 
-      body: JSON.stringify(
-      {
-        fields: getFormData(CONTACT_FORM),
-        context: {
-          hutk: getHubspotUtkCookie(),
-          pageName: document.title,
-          pageUri: window.location.href
-        }
-      }), 
-    })
-    .then(resp => {
-      if (resp.status != 200) {
-        showFormMessage(CONTACT_FORM, 'Something went wrong, try again later!', color='red');
-      } else {
-        showFormMessage(CONTACT_FORM, 'Your message was sent!', color='black');
-      }
-    }).catch(error => {
-      showFormMessage(CONTACT_FORM, 'Something went wrong, try again later!', color='red');
-    });
-  });
-</script>
 
 
 		<!-- subscription -->
