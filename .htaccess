@@ -77,10 +77,6 @@
   SetOutputFilter DEFLATE
 </FilesMatch>
 
-RewriteEngine on
-RewriteCond %{HTTP_HOST} ^www\.(.+)$ [NC]
-RewriteRule ^(.*)$ http://%1/$1 [R=301,L]
-
 <IfModule mod_headers.c>
   ##### 1 Month for most static resources
   <FilesMatch "\.(css|jpg|jpeg|png|webp|gif|js|ico|woff|woff2|eot|ttf)$">
