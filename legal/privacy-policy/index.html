@@ -125,21 +125,21 @@
           <ul>
             
             <li>
-              <a class="flex align-center mb-4" href="https://blog.ventory.io">
+              <a class="flex align-center mb-4 navigation-mobile-link" href="https://blog.ventory.io">
                 <p class="fs-2 mr-2">Blog</p>
                 <i class="fa fa-arrow-right"></i>
               </a>
             </li>
             
             <li>
-              <a class="flex align-center mb-4" href="/resources/customer-stories">
+              <a class="flex align-center mb-4 navigation-mobile-link" href="/resources/customer-stories">
                 <p class="fs-2 mr-2">Customer Stories</p>
                 <i class="fa fa-arrow-right"></i>
               </a>
             </li>
             
             <li>
-              <a class="flex align-center mb-4" href="/notion">
+              <a class="flex align-center mb-4 navigation-mobile-link" href="/notion">
                 <p class="fs-2 mr-2">Knowledge base</p>
                 <i class="fa fa-arrow-right"></i>
               </a>
@@ -153,21 +153,21 @@
           <ul>
             
             <li>
-              <a class="flex align-center mb-4" href="/technology/#ventory-app">
+              <a class="flex align-center mb-4 navigation-mobile-link" href="/technology/#ventory-app">
                 <p class="fs-2 mr-2">Ventory App</p>
                 <i class="fa fa-arrow-right"></i>
               </a>
             </li>
             
             <li>
-              <a class="flex align-center mb-4" href="/technology/#ventory-connect">
+              <a class="flex align-center mb-4 navigation-mobile-link" href="/technology/#ventory-connect">
                 <p class="fs-2 mr-2">Ventory Connect</p>
                 <i class="fa fa-arrow-right"></i>
               </a>
             </li>
             
             <li>
-              <a class="flex align-center mb-4" href="/technology/#ventory-web">
+              <a class="flex align-center mb-4 navigation-mobile-link" href="/technology/#ventory-web">
                 <p class="fs-2 mr-2">Ventory Web</p>
                 <i class="fa fa-arrow-right"></i>
               </a>
@@ -190,10 +190,18 @@
 
     document.getElementById('navigation-close-icon').addEventListener('click', (event) => {
       event.preventDefault();
+      closeMobileNav();
+    });
+
+    Array.from(document.getElementsByClassName('navigation-mobile-link')).forEach((item) => item.addEventListener('click', event => {
+      closeMobileNav();
+    }));
+
+    const closeMobileNav = () => {
       document.getElementById('navigation-mobile').style.display = 'none';
       document.getElementById('navigation-bars-icon').style.display = 'block';
       document.getElementById('navigation-close-icon').style.display = 'none';
-    });
+    }
   </script>
 
   <!-- Mobile --> 
