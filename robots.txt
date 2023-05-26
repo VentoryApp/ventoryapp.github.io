@@ -1,4 +1,5 @@
 User-agent: *
 disallow: */404.html
+disallow: */yfkzhkssdojxjbdzrjhrkrckmlufqvng
 
 Sitemap: https://ventory.io/sitemap.xml
