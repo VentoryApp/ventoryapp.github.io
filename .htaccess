@@ -1,3 +1,5 @@
+RewriteRule ^\.well-known/.+ - [END]
+
 ##### Optimize default expiration time - BEGIN
 <IfModule mod_expires.c>
 
